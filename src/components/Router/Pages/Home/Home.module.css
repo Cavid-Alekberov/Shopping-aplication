@@ -1,0 +1,81 @@
+.imageBox {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 88vh;
+  background-image: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(0, 0, 255, 0.8)
+    ),
+    url("../../../../../images/mainImg.png");
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+  background-size: cover;
+}
+.homeContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  color: #fff;
+}
+.imageBox a {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 1rem 1.2rem;
+  margin: 1rem;
+  color: white;
+}
+.sp1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  animation: iContent1 2s ease-out;
+}
+.sp2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  animation: iContent2 2s ease-out;
+}
+
+@media (max-width: 660px) {
+  .sp1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 465px) {
+  .sp1 {
+    font-size: 1.5rem;
+  }
+}
+@keyframes iContent1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes iContent2 {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
