@@ -9,11 +9,21 @@ export interface IData {
     price: number,
     title: string,
 }
+export interface Izz {
+    items: IData[],
+    loading: boolean,
+    error: string
+}
+
+export interface IPro {
+
+}
 
 export interface ISearchBar {
     id: string,
     image: string,
     title: string,
+    cancelSerachHandler: Function
 }
 
 export interface IItemsProps {
@@ -29,6 +39,7 @@ export interface IItems {
     image: string
     title: string,
     price: number,
+    category: string,
     quantity: number,
     totalPrice: number,
 }
@@ -36,7 +47,6 @@ export interface IItems {
 export interface cartState {
     items: IItems[],
     totalQuantity: number,
-    popUp: boolean
 }
 
 export interface ICart {
@@ -44,7 +54,18 @@ export interface ICart {
     image: string
     title: string,
     price: number,
+    category: string,
+    quantity: number
+}
 
+export interface ICartItem {
+    id: string,
+    image: string
+    title: string,
+    price: number,
+}
+export interface ICartState {
+    cart: ICartItem[]
 }
 export interface IRomoveCart {
     id: string,
@@ -54,6 +75,23 @@ export interface IRomoveCart {
 
 export interface searchState {
     showSearch: boolean
+}
+
+export interface ICurrentProd {
+    currentProd: IData[]
+}
+
+export interface IFavorits {
+    id: string,
+    image: string
+    title: string,
+    price: number,
+    category: string
+}
+
+
+export interface IFavoritsState {
+    favorits: IFavorits[]
 }
 
 

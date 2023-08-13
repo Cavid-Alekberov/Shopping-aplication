@@ -1,0 +1,14 @@
+.favoritBox {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  flex-flow: column wrap;
+
+  .favoritProducts {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 90vh;
+  }
+}

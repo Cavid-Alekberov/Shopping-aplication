@@ -1,0 +1,33 @@
+.homeBox {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  .productsBox {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    .productsOption {
+      width: 100vw;
+      height: 22vh;
+      margin-top: 1rem;
+      background-color: rgb(94, 190, 94);
+      clip-path: polygon(0 48%, 100% 0, 100% 100%, 0% 100%);
+      background-size: cover;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding:  1rem;
+
+      select{
+        width: 8rem;
+        height: 2rem;
+      
+      }
+  
+    }
+  }
+}

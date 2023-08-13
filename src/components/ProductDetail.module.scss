@@ -1,0 +1,124 @@
+.prodContainer {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+
+  .productBox {
+    display: flex;
+    flex-flow: column wrap;
+
+    .prodImg {
+      width: 40vw;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 27vw;
+        height: 70vh;
+      }
+    }
+
+    .prodDeatils {
+      width: 60vw;
+      height: 30vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 3rem;
+
+      .title {
+        display: inline;
+        font-size: 1.5rem;
+      }
+      .category {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .description {
+        font-size: 1rem;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        width: 10rem;
+
+        .btn {
+          cursor: pointer;
+          padding: 0.3rem 1.5rem;
+          border: none;
+          border-radius: 1.2rem;
+          font-size: 1rem;
+          font-weight: bold;
+          color: white;
+          background-color: #404040;
+          transition: all 0.3s;
+        }
+        .btn:disabled {
+          cursor: not-allowed;
+        }
+        .btn:hover {
+          background-color: white;
+          color: #404040;
+          border: 1px solid black;
+        }
+        .btn:active {
+          transform: scale(1.2);
+          box-shadow: 10px 10px 30px 10px grey;
+        }
+      }
+      .addCard {
+        padding: 0.7rem 2.5rem;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+      .addCard:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border: 1px solid black;
+      }
+      .addCard:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .productBox {
+    display: flex;
+    flex-flow: row wrap;
+
+    .prodImg {
+      img {
+        width: 80vw;
+      }
+    }
+
+    .prodDeatils {
+      width: 90vw;
+      height: auto;
+    }
+  }
+}

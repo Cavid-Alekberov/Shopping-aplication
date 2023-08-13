@@ -1,0 +1,100 @@
+.itemBox {
+  width: 15rem;
+  height: 24rem;
+  box-shadow: 0 0px 8px 1px rgba(15, 15, 15, 0.625);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column;
+  padding: 0.2rem;
+  margin: 1.5rem 0.4rem;
+  cursor: pointer;
+
+  .itemImg {
+    width: 100%;
+    height: 15rem;
+
+    img {
+      width: 70%;
+      height: 10rem;
+      margin: 0.5rem 15%;
+    }
+
+    .rate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      font-size: 1.2rem;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: white;
+        border-radius: 56%;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 0.5rem;
+        background-color: transparent;
+        cursor: pointer;
+
+        .heart {
+          color: rgb(217, 215, 215);
+          font-size: 1.3rem;
+        }
+        .fillHeart {
+          color: red;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .itemDecription {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 7rem;
+    width: 100%;
+    padding: 0.5rem;
+    gap: 1rem;
+    height: 8rem;
+    color: rgb(93, 93, 93);
+
+    .title {
+      font-size: 1rem;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  }
+
+  .action {
+    height: 3rem;
+
+    .btn {
+      cursor: pointer;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 1.2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #404040;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background-color: white;
+      color: #404040;
+      border: 1px solid black;
+    }
+    .btn:active {
+      transform: scale(1.2);
+      box-shadow: 20px 20px 50px 15px grey;
+    }
+  }
+}

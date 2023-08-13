@@ -1,0 +1,51 @@
+.entranceBox {
+  position: relative;
+  top: 4rem;
+  width: 100vw;
+  height: 85vh;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+  background-size: cover;
+
+  img {
+    width: 100vw;
+    height: 85vh;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(0, 0, 255, 0.8)
+    );
+  }
+  .imageAction {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    display: flex;
+    gap: 3rem;
+    z-index: 11;
+
+    .actionPN {
+      display: flex;
+      align-items: center;
+      border: 2px solid white;
+      font-size: 2.5rem;
+      color: black;
+      background-color: white;
+
+      :hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .entranceBox {
+    position: relative;
+    top: 4rem;
+    width: 100vw;
+    height: 72vh;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    background-size: cover;
+  }
+}
