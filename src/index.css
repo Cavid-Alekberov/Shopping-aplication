@@ -20,6 +20,9 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  background-image: url("./assets/mainImg.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {

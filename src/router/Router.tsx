@@ -6,7 +6,6 @@ import { Cart } from "../pages/Cart";
 import { ProductDetail } from "../components/ProductDetail";
 import { Favorits } from "../pages/Favorits";
 import { Login } from "../pages/Login";
-import { Category } from "../pages/Category";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +14,6 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { index: true, element: <Home /> },
-      { path: "category", element: <Category /> },
       { path: "favorits", element: <Favorits /> },
       { path: "cart", element: <Cart /> },
       { path: "profile", element: <Login /> },

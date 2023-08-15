@@ -3,7 +3,7 @@ import s from "./Footer.module.scss";
 
 export const Footer = () => {
   return (
-    <div className={s.footerBox}>
+    <footer className={s.footerBox}>
       <div className={s.footer1}>
         <div className={s.footer1Inner}>
           <div>Quick links</div>
@@ -16,6 +16,6 @@ export const Footer = () => {
         <div>Country/region</div>
         <div>Pay method</div>
       </div>
-    </div>
+    </footer>
   );
 };

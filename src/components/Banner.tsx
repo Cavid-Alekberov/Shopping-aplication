@@ -24,15 +24,8 @@ export const Banner = () => {
   };
   return (
     <div className={s.entranceBox}>
-      <img src={image[currentImg]} alt="Products Publicity" />
-      <div className={s.imageAction}>
-        <div onClick={prevImgHandler} className={s.actionPN}>
-          <AiOutlineArrowLeft />
-        </div>
-        <div onClick={nextImgHandler} className={s.actionPN}>
-          <AiOutlineArrowRight />
-        </div>
-      </div>
+
+
     </div>
   );
 };

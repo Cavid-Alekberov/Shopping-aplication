@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
 
+
   .productsBox {
     width: 100vw;
     display: flex;
@@ -12,9 +13,9 @@
 
     .productsOption {
       width: 100vw;
-      height: 22vh;
+      height: 15vh;
       margin-top: 1rem;
-      background-color: rgb(94, 190, 94);
+      background-color: white;
       clip-path: polygon(0 48%, 100% 0, 100% 100%, 0% 100%);
       background-size: cover;
       display: flex;
