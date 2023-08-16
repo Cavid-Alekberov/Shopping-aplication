@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import s from "./ProductDetail.module.scss";
 import { useFetch } from "../api/useFetch";
 import { IData } from "../types";
@@ -13,6 +13,7 @@ export const ProductDetail = () => {
   const [count, setCount] = useState<number>(0);
   const { prodId } = useParams();
   const dispatch = useAppDispatch();
+  const navigate = useNavigate()
 
   const currentProd: IData[] = items?.filter((prod) => prod.id === prodId);
 
@@ -37,6 +38,7 @@ export const ProductDetail = () => {
         quantity: count,
       })
     );
+    count !== 0 && navigate("/cart")
   };
 
   const content = currentProd.map((prod) => (
@@ -63,8 +65,8 @@ export const ProductDetail = () => {
         <button className={s.addCard} onClick={addToCartHandler}>
           Add to cart
         </button>
-        <span className={s.description}>{prod.description}</span>
       </div>
+      <span className={s.description}>{prod.description}</span>
     </div>
   ));
 

@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
 import { useAppSelector } from "../redux/hooks";
 import { CartItems } from "../components/CartItems";
 import classes from "./Cart.module.scss";
 import React from "react";
-import { ToastContainer } from "react-toastify";
 import { Link } from "react-router-dom";
 
 export const Cart: React.FC = () => {

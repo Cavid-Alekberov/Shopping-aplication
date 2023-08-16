@@ -1,39 +1,38 @@
 .prodContainer {
-  position: absolute;
+  position: relative;
   top: 5rem;
   left: 0;
-  display: flex;
   width: 100vw;
   height: 100vh;
   padding: 1rem;
 
   .productBox {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
 
     .prodImg {
-      width: 40vw;
+      width: 40%;
+      height: 50vh;
       display: flex;
       justify-content: center;
       img {
         width: 27vw;
-        height: 70vh;
+        height: 50vh;
       }
     }
 
     .prodDeatils {
-      width: 60vw;
-      height: 30vw;
+      width: 60%;
+      height: 28vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       gap: 1rem;
       padding: 0.5rem 3rem;
 
       .title {
         display: inline;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       .category {
         font-size: 1.5rem;
@@ -47,10 +46,7 @@
         font-weight: bold;
         font-family: "Times New Roman", Times, serif;
       }
-      .description {
-        font-size: 1rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
-      }
+     
 
       .action {
         display: flex;
@@ -102,6 +98,13 @@
         transform: scale(0.9);
       }
     }
+     .description {
+        font-size: 1.3rem;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border:1px solid black;
+        padding:0.5rem;
+       margin-top:2rem;
+      }
   }
 }
 

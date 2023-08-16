@@ -12,7 +12,7 @@ export const SearchBar: React.FC<ISearchBar> = (props) => {
         <img src={props.image} alt="Product Image" />
       </div>
       <div className={s.searchTitle}>
-        <Link to={`${props.id}`} onClick={close}>
+        <Link to={`/${props.id}`} onClick={close} target='_blank'>
           {props.title}
         </Link>
       </div>
