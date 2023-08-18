@@ -2,7 +2,7 @@
   position: relative;
   top: 0;
   left: 0;
-   background-image: url("../assets/mainImg.png");
+  background-image: url("../assets/mainImg.png");
   background-size: cover;
   background-attachment: fixed;
 
@@ -13,14 +13,17 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    background-color:white;
+     background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(0, 0, 255, 0.8)
+    );
 
     .productsOption {
       width: 100vw;
       height: 15vh;
       margin-top: 1rem;
-      background-color: white;
-      clip-path: polygon(0 48%, 100% 0, 100% 100%, 0% 100%);
-      background-size: cover;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;

@@ -1,6 +1,6 @@
 import { useAppSelector } from "../redux/hooks";
 import { CartItems } from "../components/CartItems";
-import classes from "./Cart.module.scss";
+import s from "./Cart.module.scss";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -23,12 +23,17 @@ export const Cart: React.FC = () => {
         category={item.category}
       />
     ))
-  ) : (
-    <h1>No Added items</h1>
+  ) : (<div className={s.cartBoxEmpty}>
+    <h1>Your Cart is Empty</h1>
+    <Link to="/" >Continue Shopping</Link>
+    <h2>Have an account?</h2>
+    <h4><Link to="/profile">Log in</Link>  to check out faster.</h4>
+  </div>
+
   );
 
   return (
-    <div className={classes.cartBox}>
+    <div className={s.cartBox}>
       <Link to=".." relative="path">
         &#8672; Back
       </Link>
