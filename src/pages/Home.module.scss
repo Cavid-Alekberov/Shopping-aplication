@@ -6,19 +6,13 @@
   background-size: cover;
   background-attachment: fixed;
 
-
   .productsBox {
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    background-color:white;
-     background: linear-gradient(
-      45deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(0, 0, 255, 0.8)
-    );
+    background-color: white;
 
     .productsOption {
       width: 100vw;
@@ -27,14 +21,12 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      padding:  1rem;
+      padding: 1rem;
 
-      select{
+      select {
         width: 8rem;
         height: 2rem;
-      
       }
-  
     }
   }
 }

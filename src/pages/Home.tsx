@@ -94,8 +94,8 @@ export const Home = () => {
       <Banner />
       <div className={s.productsBox}>
         <div className={s.productsOption}>
-          {sortSelection}
-          {categorySelection}
+          <span>Sort by: {sortSelection}</span>
+          <span>Filter:  {categorySelection}</span>
         </div>
         {products}
       </div>

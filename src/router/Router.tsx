@@ -6,6 +6,10 @@ import { Cart } from "../pages/Cart";
 import { ProductDetail } from "../components/ProductDetail";
 import { Favorits } from "../pages/Favorits";
 import { Login } from "../pages/Login";
+import { About } from "../pages/About";
+import { Contact } from "../pages/Contact";
+import { Shipping } from "../pages/Shipping";
+import { Blog } from "../pages/Blog";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +22,10 @@ const router = createBrowserRouter([
       { path: "cart", element: <Cart /> },
       { path: "profile", element: <Login /> },
       { path: ":prodId", element: <ProductDetail /> },
+      { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
+      { path: "shipping", element: <Shipping /> },
+      { path: "blog", element: <Blog /> },
     ],
   },
 ]);
